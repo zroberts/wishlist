@@ -50,29 +50,7 @@ app.post('/api/product/search', function(req, res){
 
 	//res.render('main', {title: "something posted" ,header: "Test"});
 });
-
-
-/*var amazon = require("amazon-product-api");
-
-var client = amazon.createClient({
-	awsId: "AKIAI7LCAK3FMX7NN47Q",
-	awsSecret: "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",
-	awsTag: "lcox2-20"
-});
-client.itemSearch({
-	Keywords: "Playstation"
-}, function(err, results, response){
-	if(err){
-		console.log(err)
-	}else{
-		console.log("results: ");
-		console.log(results);
-		console.log('\nResponse: ');
-		console.log(response);
-	}
-});
-
-*/
+/*
 var amazon = require("amazonapi");
 
 amazon("playstation", function(err, res){
@@ -81,7 +59,7 @@ amazon("playstation", function(err, res){
 	}else{
 		console.log(res);
 	}
-});
+});*/
 
 
 

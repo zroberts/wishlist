@@ -11,15 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "after": "^0.8.2",
-    "amazon-product-api": "^0.4.2",
-    "amazonapi": "git+https://github.com/lcox2/AmazonAPI.git#testing",
     "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
-    "ebayfinder": "git+https://github.com/MattGable/ebayfinder.git",
     "express": "^4.14.0",
     "pug": "^2.0.0-beta6",
-    "walmart": "git+https://github.com/zroberts/walmart.git", 
-    "amazonapi": "git+https://github.com/lcox2/AmazonAPI.git#testing"
+    "ebayfinder": "git+https://github.com/MattGable/ebayfinder.git",
+    "amazonapi": "git+https://github.com/zroberts/amazonapi.git",
+    "walmart": "git+https://github.com/zroberts/walmart.git"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

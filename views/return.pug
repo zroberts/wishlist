@@ -37,8 +37,13 @@
 											p $#{item.saleprice}
 						div.group
 							div.rating
+								-if(item.provider == "Amazon" && item.hasReviews == "true"){
+									div.amazonReviews
+										iframe(source=item.reviews)
+								-}else{
 								span.tooltip #{item.reviews} stars from<br />#{item.numReviews} reviews
 								span.stars #{item.reviews}
+								-}
 							div.link
 								a(href= item.url, target="_blank") Visit #{item.provider} to <br />
 									| see this item

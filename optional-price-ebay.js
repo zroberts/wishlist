@@ -9,7 +9,7 @@ var ebay = require('ebay-api');
 //
 /************************
 ***** Changed this so that instead of calling in ebay on my end, I call in ebay.search(). Yours Should be fine as-is, or you can change it to this way, whatever you think is best.
-***************************/
+***************************/cd 
 module.exports = {
     search: function(APIKEY, name, price, callback) {
         //Find by name and price with results limited to two
