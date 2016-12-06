@@ -1,0 +1,27 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "CS 320 XML - Wishlist Project that pulls data from classmates API's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Zak Roberts",
+  "license": "ISC",
+  "dependencies": {
+    "after": "^0.8.2",
+    "amazon-product-api": "^0.4.2",
+    "amazonapi": "git+https://github.com/lcox2/AmazonAPI.git#testing",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "ebayfinder": "git+https://github.com/MattGable/ebayfinder.git",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6",
+    "walmart": "git+https://github.com/zroberts/walmart.git", 
+    "amazonapi": "git+https://github.com/lcox2/AmazonAPI.git#testing"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

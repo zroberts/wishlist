@@ -1,0 +1,18 @@
+# Create by https://www.gitignore.io/api/node
+
+### Node ###
+# Logs
+logs 
+*.log
+npm-debug.log*
+
+#Dependency Directory
+node_modules
+
+#Option npm cache Directory
+.npm
+
+#Oprional REPL history
+.node_repl_history
+
+.vscode

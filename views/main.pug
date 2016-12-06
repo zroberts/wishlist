@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+	h1= header
+	.group
+		input(type="text", placeholder="Search Query", value="Playstation").search#search
+		input(type="text", placeholder="Min Price").min#min
+		input(type="text", placeholder="Max Price").max#max
+	
+	a(href="#").submit Get Results

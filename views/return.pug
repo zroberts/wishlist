@@ -1,0 +1,44 @@
+.items
+	if error
+		div.errors
+			for err in error
+				p Code: #{err.code}<br />#{err.message}
+	if array
+		for item in array
+			div.singleItem
+				div.headline
+					h2 #{item.name}
+				div.category
+					p #{item.category}
+				div.group.itemInfo
+					div.sku
+						p SKU: #{item.sku}
+					div.pid
+						p Product ID #{item.id}
+				div.group.itemDescription
+					div.image
+						img(src= item.imageUrl)
+					div.itemContent
+						div.description!= item.description
+							div.price
+								if item.price && item.saleprice
+									div.group.double
+										div.msrp
+											p $#{item.price}
+										div.salePrice
+											p $#{item.saleprice}
+								else if item.price
+									div.group
+										div.msrp
+											p $#{item.price}
+								else if item.saleprice
+									div.group
+										div.salePrice
+											p $#{item.saleprice}
+						div.group
+							div.rating
+								span.tooltip #{item.reviews} stars from<br />#{item.numReviews} reviews
+								span.stars #{item.reviews}
+							div.link
+								a(href= item.url, target="_blank") Visit #{item.provider} to <br />
+									| see this item
