@@ -60,7 +60,7 @@ module.exports = {
 
 		amazon.setApi("AKIAI7LCAK3FMX7NN47Q", "yAHkb+MUAwyV821RjTPiAW0EZCf3gk8M+oWA+tHO", "lcox2-20");
 
-		amazon.search("Playstation", function(err, res){
+		amazon.search(queryObject.searchTerm, function(err, res){
 			if(err){
 				console.log("Amazon Error " + err);
 			}else{
